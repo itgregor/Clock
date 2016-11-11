@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.iantg.clock.MainActivity">
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_alignParentTop="true" />
+
+    //android:background="@android:color/holo_blue_dark"
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Set Alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_on"
+        android:layout_alignBaseline="@+id/alarm_off"
+        android:layout_alignBottom="@+id/alarm_off"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_off"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/timePicker"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Set Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer_on"
+        android:layout_alignBaseline="@+id/alarm_on"
+        android:layout_alignBottom="@+id/alarm_on"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Nothing Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/update_text"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/timer_on"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
